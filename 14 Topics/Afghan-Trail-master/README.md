@@ -5,7 +5,7 @@ Afghani Trail is a text based role-playing game based on the popular Oregon Trai
 After player buys their supply and equipment, player will start their journey to the south eastern steppes of Afghanistan, off to Iran. Players are required to carry food for their entire journey, in addition to medicine, ammunition to hunt local wildlife, and defend themselves from extremists. An important aspect of the game is the ability to hunt. Using guns and bullets bought over the course of play, players will be able hunt wild animals to add to their food reserves, in addition to killing muslim extremists.
 
 Along the way characters will be experiencing illnesses and even death. The party could die from various causes, such as measles, malaria, exhaustion, typhoid, cholera, and, dysentery. The wagon could break down in the journey and player is required to fix it. Players must also plan carefully and stock their supplies as needed. The players task is simple, to take their party to Herat with adequate supplies to survive the journey. The game is over when the party reaches the destination, or they succumb to terrorists or an otherwise grim end.
-List of end user stories - Rizky created 
+List of end user stories -
 Here is the list of end user stories or scenes that are needed for the game:
 
 ·         Start the program
