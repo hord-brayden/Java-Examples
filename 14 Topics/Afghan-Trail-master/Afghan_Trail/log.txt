@@ -1,0 +1,7 @@
+All Game Items
+
+Item Types   First Item   Second Item  Third Item   Fourth Item  Fifth Item   
+Medicine:    Penecillin   Advil        Cola         Tylenol      Leeches      
+Food:        Lamb         Gyro         Beef         Mango        Carrot       
+Parts:       Wheel        Axle         Strut        Spoke        Saddle       
+Ammo:        round        shot         Shell        pellet       Bullet       

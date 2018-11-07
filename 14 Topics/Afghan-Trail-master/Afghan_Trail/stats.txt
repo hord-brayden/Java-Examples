@@ -1,0 +1,9 @@
+Jon's Player Stats
+
+Stat Name        Stat
+Type:          Banker
+Money:             67
+Health:          Good
+Stamina:          100
+Speed:             10
+Wagon:           Good

@@ -1,0 +1,10 @@
+Make sure all help guides are written
+Handle input cases in all control methods
+Display player stats in a table
+Display player inv in a table
+ShopKeeperController methods
+progressPlayer method in game controller
+
+
+
+	

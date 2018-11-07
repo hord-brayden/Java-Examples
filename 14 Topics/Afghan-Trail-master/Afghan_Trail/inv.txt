@@ -1,0 +1,57 @@
+Jon's Inventory
+
+#   Name           Type           Price          
+1:  Advil          Medicine       $1.00           
+
+2:  Cola           Medicine       $2.00           
+
+3:  Leeches        Medicine       $3.00           
+
+4:  Leeches        Medicine       $2.00           
+
+5:  Advil          Medicine       $4.00           
+
+6:  Gyro           Food           $1.00           
+
+7:  Lamb           Food           $5.00           
+
+8:  Gyro           Food           $4.00           
+
+9:  Gyro           Food           $1.00           
+
+10: Gyro           Food           $5.00           
+
+11: Saddle         Parts          $1.00           
+
+12: Wheel          Parts          $4.00           
+
+13: Strut          Parts          $4.00           
+
+14: Spoke          Parts          $3.00           
+
+15: Wheel          Parts          $5.00           
+
+16: Bullet         Ammo           $3.00           
+
+17: Bullet         Ammo           $1.00           
+
+18: pellet         Ammo           $2.00           
+
+19: Shell          Ammo           $2.00           
+
+20: pellet         Ammo           $2.00           
+
+21: Cola           Medicine       $5.00           
+
+22: Beef           Food           $5.00           
+
+23: Mango          Food           $4.00           
+
+24: Spoke          Parts          $4.00           
+
+25: Shell          Ammo           $4.00           
+
+26: Shell          Ammo           $4.00           
+
+27: Strut          Parts          $4.00           
+
