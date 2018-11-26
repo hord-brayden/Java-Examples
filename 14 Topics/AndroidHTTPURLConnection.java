@@ -1,6 +1,6 @@
 //AndroidHTTPURLConnection
 
-//A URLConnection with support for HTTP-specific features. See the spec for details. Each HttpURLConnection instance is used to make a single request but the underlying network connection to the HTTP server may be transparently shared by other instances. 
+//A URLConnection with support for HTTP-specific features. Each HttpURLConnection instance is used to make a single request but the underlying network connection to the HTTP server may be transparently shared by other instances. 
 
 //Calling the close() methods on the InputStream or OutputStream of an HttpURLConnection after a request may free network resources associated with this instance but has no effect on any shared persistent connection. Calling the disconnect() method may close the underlying socket if a persistent connection is otherwise idle at that time.
 
