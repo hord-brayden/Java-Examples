@@ -5,7 +5,7 @@
 //Calling the close() methods on the InputStream or OutputStream of an HttpURLConnection after a request may free network resources associated with this instance but has no effect on any shared persistent connection. Calling the disconnect() method may close the underlying socket if a persistent connection is otherwise idle at that time.
 
 
-// Some but not all of the Methods we'll use are the 
+// Some but not all of the Methods we'll use are the getURLContents, URLconnection, close, and open connection amongst others.
 
 import java.net.*;
 import java.io.*;
