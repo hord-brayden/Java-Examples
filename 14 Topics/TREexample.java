@@ -19,7 +19,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 
 //I simply took the atomicinteger commands found within the example, and repurposed them to a similar effect, but it creates a different output and has an overall different function than found within the actual application.
-class TRE{ 
+public class TRE{ 
     
     private static AtomicInteger atomInt = new AtomicInteger(); 
     public static class RunCommand implements Runnable {
