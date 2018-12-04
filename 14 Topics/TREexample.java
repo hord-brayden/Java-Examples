@@ -9,6 +9,8 @@ Also, since we're playing with atomic integers, I found a great Oracle resource 
 
 Let me know if this works for you!
 
+This program that uses Threads, runnables, and executors as well as a random integer class in order to pull in appropriate values and count them in for loops. I tried to use the most up to date information I could find on the subject matter, and I have represented it here.
+
 */
 import java.util.Random;
 import java.util.concurrent.ExecutorService;  
