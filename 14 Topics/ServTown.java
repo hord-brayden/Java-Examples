@@ -27,10 +27,10 @@ import javax.servlet.http.HttpServletResponse;
 
 
         //This is where we put everything into printWriter and strings. 
-        PrintWriter out = response.getWriter();
+        PrintWriter outY = response.getWriter();
         String title = "This is servtown which is filled with chupacabras!";
         String setType ="<!doctype html>";
-        out.println(setType + "<html>\n" +"<head> <title>" + title + "</title> </head>\n" + "<body>\n" 
+        outY.println(setType + "<html>\n" +"<head> <title>" + title + "</title> </head>\n" + "<body>\n" 
                             + "<h1>" + title + "</h1>\n" + "<ul>\n" + request.getParameter("name") 
                             + "\n" + request.getParameter("class") + "\n" + chupaCabra + "</ul>\n" 
                             + "</body>\n" + "</html>");
@@ -39,11 +39,13 @@ import javax.servlet.http.HttpServletResponse;
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {ProcessRequest(request, response);}
+
+    outY.close();
 /*
 Unsure how to properly implement the destroy just yet. 
 I know that they're supposed to be destroyed or closed when you're done with them. 
 
-    protected void destroy
+    void destroy
 */
 }
 
