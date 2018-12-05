@@ -64,7 +64,8 @@ public class DiseaseContractionView extends BasicView {
     }
     
     public void displayHelp(){
-//display event help for each event option
+//display event help for each event option, this is so people have a good idea of what it is they are trying to do
+//Within the application, and don't just willy nilly click buttons throughout the program.
 this.console.print("Disease Contracation Help \n");
 this.console.print("TAKE MEDICINE lets you exhause some of your medicine\n"
         + "supply, but has the chance to heal your herp-aids\n" ); 
@@ -80,6 +81,7 @@ this.console.print("REST menas you kick back and gain some stamina \n");
         switch (actionInt){
             
             //Take Medicine
+            //This is mapped to the first item in the array, take medicine. This should help you fight off any illness
             case 0:
   
                 this.console.print("You chose '" + options[0] + "'\n");
@@ -94,7 +96,7 @@ this.console.print("REST menas you kick back and gain some stamina \n");
 
                 break;
              
-            //Ignore    
+            //Ignore and do nothing. 
             case 1:
                 
                 this.console.print("You chose '" + options[1] + "'\n");
@@ -105,7 +107,8 @@ this.console.print("REST menas you kick back and gain some stamina \n");
                 }
                 break;
              
-            //Rest    
+            //Rest and build up your stamina so that youhave a fighting chance at beating this cold!
+            //Clicking this option will essentially give you 
             case 2:
                 
                 this.console.print("You chose '" + options[2] + "'\n");
