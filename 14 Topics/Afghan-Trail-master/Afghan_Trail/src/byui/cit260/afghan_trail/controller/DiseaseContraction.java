@@ -31,7 +31,7 @@ public class DiseaseContraction {
             String healChanceStr = Double.toString(player.getStamina() * 0.5);
             double healChance = Double.parseDouble(healChanceStr);
             double healBonus = 1; // player.item.medicine * 10 
-            double chanceToHeal = healBonus + healChance;            
+            double chanceToHeal = healBonus * healChance;            
             int num = (int) Math.ceil(Math.random() * 100);
             boolean isSuccessful = (num > chanceToHeal);
 
