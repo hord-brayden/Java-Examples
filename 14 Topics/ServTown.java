@@ -44,7 +44,7 @@ Unsure how to properly implement the destroy just yet.
 I know that they're supposed to be destroyed or closed when you're done with them. 
 
     protected void destroy
-
+*/
 }
 
 
