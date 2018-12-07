@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 7, 2018 12:11:46 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.Store" table="store" catalog="sakila" optimistic-lock="version">
+        <id name="storeId" type="java.lang.Byte">
+            <column name="store_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="address" class="pojos.Address" fetch="select">
+            <column name="address_id" not-null="true" />
+        </many-to-one>
+        <many-to-one name="staff" class="pojos.Staff" fetch="select">
+            <column name="manager_staff_id" not-null="true" unique="true" />
+        </many-to-one>
+        <property name="lastUpdate" type="timestamp">
+            <column name="last_update" length="26" not-null="true" />
+        </property>
+        <set name="staffs" table="staff" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="store_id" not-null="true" />
+            </key>
+            <one-to-many class="pojos.Staff" />
+        </set>
+        <set name="inventories" table="inventory" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="store_id" not-null="true" />
+            </key>
+            <one-to-many class="pojos.Inventory" />
+        </set>
+        <set name="customers" table="customer" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="store_id" not-null="true" />
+            </key>
+            <one-to-many class="pojos.Customer" />
+        </set>
+    </class>
+</hibernate-mapping>
