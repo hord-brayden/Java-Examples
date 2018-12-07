@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 7, 2018 12:11:46 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.Country" table="country" catalog="sakila" optimistic-lock="version">
+        <id name="countryId" type="java.lang.Short">
+            <column name="country_id" />
+            <generator class="identity" />
+        </id>
+        <property name="country" type="string">
+            <column name="country" length="50" not-null="true" />
+        </property>
+        <property name="lastUpdate" type="timestamp">
+            <column name="last_update" length="26" not-null="true" />
+        </property>
+        <set name="cities" table="city" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="country_id" not-null="true" />
+            </key>
+            <one-to-many class="pojos.City" />
+        </set>
+    </class>
+</hibernate-mapping>

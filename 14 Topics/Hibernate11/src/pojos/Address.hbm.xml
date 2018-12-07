@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 7, 2018 12:11:46 PM by Hibernate Tools 4.3.1 -->
+<hibernate-mapping>
+    <class name="pojos.Address" table="address" catalog="sakila" optimistic-lock="version">
+        <id name="addressId" type="java.lang.Short">
+            <column name="address_id" />
+            <generator class="identity" />
+        </id>
+        <many-to-one name="city" class="pojos.City" fetch="select">
+            <column name="city_id" not-null="true" />
+        </many-to-one>
+        <property name="address" type="string">
+            <column name="address" length="50" not-null="true" />
+        </property>
+        <property name="address2" type="string">
+            <column name="address2" length="50" />
+        </property>
+        <property name="district" type="string">
+            <column name="district" length="20" not-null="true" />
+        </property>
+        <property name="postalCode" type="string">
+            <column name="postal_code" length="10" />
+        </property>
+        <property name="phone" type="string">
+            <column name="phone" length="20" not-null="true" />
+        </property>
+        <property name="location" type="binary">
+            <column name="location" not-null="true" />
+        </property>
+        <property name="lastUpdate" type="timestamp">
+            <column name="last_update" length="26" not-null="true" />
+        </property>
+        <set name="staffs" table="staff" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="address_id" not-null="true" />
+            </key>
+            <one-to-many class="pojos.Staff" />
+        </set>
+        <set name="customers" table="customer" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="address_id" not-null="true" />
+            </key>
+            <one-to-many class="pojos.Customer" />
+        </set>
+        <set name="stores" table="store" inverse="true" lazy="true" fetch="select">
+            <key>
+                <column name="address_id" not-null="true" />
+            </key>
+            <one-to-many class="pojos.Store" />
+        </set>
+    </class>
+</hibernate-mapping>
